@@ -9,14 +9,14 @@
 // If price for a movie per day is $3, how much will you have to pay?
 // (need to add math to it)
 
-alert("You have choices of 3 kids movies. Cost for each movie will very but rental fee is $3 per day");
-let movieOne = prompt("Whats is your first movie choice and how long are you renting for?");
-alert("ok 3 days. So that will come to $9.00.");
-let movieTwo = prompt("Whats your second choice and how long are you renting for");
-alert("that will be for 5 days, so that will come to $15.00");
-let movieThree = prompt("What is you final choice");
-alert("that will be for 1 day, so that will come to $3.00");
-alert("in total for all movies it will be $27.00 even");
+// alert("You have choices of 3 kids movies. Cost for each movie will very but rental fee is $3 per day");
+// let movieOne = prompt("Whats is your first movie choice and how long are you renting for?");
+// alert("ok 3 days. So that will come to $9.00.");
+// let movieTwo = prompt("Whats your second choice and how long are you renting for");
+// alert("that will be for 5 days, so that will come to $15.00");
+// let movieThree = prompt("What is you final choice");
+// alert("that will be for 1 day, so that will come to $3.00");
+// alert("in total for all movies it will be $27.00 even");
 
 //Suppose you're working as a contractor for 3 companies:
 // Google, Amazon and Facebook, they pay you a different rate per hour.
@@ -46,4 +46,22 @@ console.log(`Pay ${amazonPay}`);
 let facebookMoney = prompt("Facebook pays $350 per hour and you worked 10 hours. Whats your total");
 let facebookPay = parseInt(facebookMoney);
 console.log(`Pay ${facebookPay}`);
-alert("WOW!! You made $7,420!! Good Job");
+
+const overallPay = (hoursA, hoursB, hoursC) => {
+
+    let googlePayPerHour = 400;
+    let amazonPayPerHour = 380;
+    let facebookPayPerHour = 350;
+    let finalPayG = googlePayPerHour * (6);
+    let finalPayA = amazonPayPerHour * (4);
+    let finalPayC = facebookPayPerHour * (10);
+    let finalIncome = finalPayG+ finalPayA + finalPayC;
+    let formattedIncome = finalIncome.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD",
+    });
+    return "Your final pay is: " + formattedIncome;
+
+}
+overallPay(6,4,10)
+alert(overallPay(12, 12, 12));
