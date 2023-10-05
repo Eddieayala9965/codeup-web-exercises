@@ -100,3 +100,9 @@
 //
 // alert(`fav color${favcolor}`);
 
+function sayHello() {
+    console.log("hello")
+}
+sayHello()
+
+function isCoding
