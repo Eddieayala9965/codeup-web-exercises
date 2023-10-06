@@ -45,3 +45,19 @@ const isCoding = (greeting, usersFullName) => {  // This is a parameter (can be 
 const love = isCoding("you", "Eddie")
 
 console.log(love)
+
+const helloG = (name) =>{
+    return  `${name} hi `
+
+
+}
+const joJo = helloG("yo");
+const joJoTwo = helloG("nah")
+console.log(joJo);
+console.log(joJoTwo)
+
+const global = "im earth";
+const tieFighter = () => {
+    const = l
+
+}
