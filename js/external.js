@@ -9,14 +9,41 @@
 // If price for a movie per day is $3, how much will you have to pay?
 // (need to add math to it)
 
-// alert("You have choices of 3 kids movies. Cost for each movie will very but rental fee is $3 per day");
-// let movieOne = prompt("Whats is your first movie choice and how long are you renting for?");
-// alert("ok 3 days. So that will come to $9.00.");
-// let movieTwo = prompt("Whats your second choice and how long are you renting for");
-// alert("that will be for 5 days, so that will come to $15.00");
-// let movieThree = prompt("What is you final choice");
-// alert("that will be for 1 day, so that will come to $3.00");
-// alert("in total for all movies it will be $27.00 even");
+alert("Welcome!")
+let action = prompt("What movies are you looking for?");
+console.log(`This is the response you will get: ${action}`);
+alert("Yes we do, our rental fee is $3 per day per movie");
+let lilMermaidDay = prompt("how many days will you be renting the little mermaid?");
+let lilMermaidNum = parseInt(lilMermaidDay);
+console.log(`Days Renting: ${lilMermaidNum}`);
+let brotherBearDay = prompt("how many days will you be renting brother bear");
+let brotherBearNun = parseInt(brotherBearDay);
+console.log(`Days Renting: ${brotherBearNun}`);
+let hercDay = prompt("how many days will you be renting hercules");
+let hercNum = parseInt(hercDay);
+console.log(`Days Renting: ${hercNum}`);
+prompt ("will that be all?");
+alert("ok no worries, ill be getting your total now");
+const payPerMovie = (pricePerDayA, pricePerDayB, pricePerDayC) => {
+
+     let lilMDayRent  = 3;
+     let brotherBDayRent = 5;
+     let hercBDayRent = 1;
+     let finalPayM = lilMDayRent * (3);
+     let finalPayB = brotherBDayRent * (3);
+     let finalPayH = hercBDayRent * (3);
+     let finalIncomeMovie = finalPayM + finalPayB + finalPayH;
+     let formattedIncomeUs = finalIncomeMovie.toLocaleString("en-US", {
+         style: "currency",
+         currency: "USD",
+     });
+     return "Your total for all the rentals are " + formattedIncomeUs;
+
+ }
+ payPerMovie(3,3,3)
+ alert(payPerMovie(3, 3, 3));
+
+
 
 //Suppose you're working as a contractor for 3 companies:
 // Google, Amazon and Facebook, they pay you a different rate per hour.
@@ -46,7 +73,6 @@ console.log(`Pay ${amazonPay}`);
 let facebookMoney = prompt("Facebook pays $350 per hour and you worked 10 hours. Whats your total");
 let facebookPay = parseInt(facebookMoney);
 console.log(`Pay ${facebookPay}`);
-
 const overallPay = (hoursA, hoursB, hoursC) => {
 
     let googlePayPerHour = 400;
