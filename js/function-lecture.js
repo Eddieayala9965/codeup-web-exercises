@@ -37,27 +37,35 @@
 
 
 //create a function named is coding that log "i love coding!"
-// argument needs to be your name + eddie loves coding
-const isCoding = (greeting, usersFullName) => {  // This is a parameter (can be anything)
-    return `${greeting} ${usersFullName} love's coding!`;
+// // argument needs to be your name + eddie loves coding
+// const isCoding = (greeting, usersFullName) => {  // This is a parameter (can be anything)
+//     return `${greeting} ${usersFullName} love's coding!`;
+// }
+//
+// const love = isCoding("you", "Eddie")
+//
+// console.log(love)
+//
+// const helloG = (name) =>{
+//     return  `${name} hi `
+//
+//
+// }
+// const joJo = helloG("yo");
+// const joJoTwo = helloG("nah")
+// console.log(joJo);
+// console.log(joJoTwo)
+//
+// const global = "im earth";
+// const tieFighter = () => {
+//     const = l
+//
+const multiplyFive = (number) => {
+    const nmr = parseFloat(number)
+    return ("this is your number" + number )
+
 }
-
-const love = isCoding("you", "Eddie")
-
-console.log(love)
-
-const helloG = (name) =>{
-    return  `${name} hi `
-
-
-}
-const joJo = helloG("yo");
-const joJoTwo = helloG("nah")
-console.log(joJo);
-console.log(joJoTwo)
-
-const global = "im earth";
-const tieFighter = () => {
-    const = l
-
-}
+console.log(multiplyFive(" 3"));
+(multiplyFive(3));
+(multiplyFive(5));
+(multiplyFive(6));

@@ -74,9 +74,11 @@
 //  // * Test your function by passing it various values and checking for the expected
 //  * return value.
 
- const calculateTotal = (luckyNum, totalAmount) => {
 
- }
+    const calculateTotal = (luckyNum, totalAmount) => {
+        if (luckyNum === "4")
+    }
+
 
 
 
