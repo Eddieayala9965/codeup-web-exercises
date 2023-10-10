@@ -14,7 +14,6 @@
 //         console.log("not a color i know");
 //     }
 // }
-//
 // console.log(analyzeColor("red"))
 
 
@@ -43,9 +42,9 @@
 //  * TODO:
 //  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
 //  * You should see a different message every time you refresh the page
-//  console.log(analyzeColor(randomColor))
 
 
+// console.log(analyzeColor(randomColor))
 
 
 // /**
@@ -75,9 +74,30 @@
 //  * return value.
 
 
-    const calculateTotal = (luckyNum, totalAmount) => {
-        if (luckyNum === "4")
-    }
+// const calculateDiscount = (luckyNumber) => {
+//     if (luckyNumber === 0) {
+//         console.log("no discount")
+//         return 0;
+//     } else if (luckyNumber === 1) {
+//         console.log("10%")
+//         return 0.10;
+//     } else if (luckyNumber === 2) {
+//         console.log("25%")
+//         return 0.25;
+//     } else if (luckyNumber !== 3) {
+//         console.log("35%")
+//         return 0.35;
+//     } else if (luckyNumber === 4) {
+//         console.log("50%")
+//         return 0.50;
+//     } else if (luckyNumber === 5) {
+//         console.log("100%")
+//         return 1.0;
+//     } else {
+//         return 'Invalid lucky number';
+//     }
+// };
+// console.log(calculateDiscount())
 
 
 
@@ -95,21 +115,21 @@
 
 
 
-const  analyzeColor = prompt("Whats your favorite color")
-    switch(analyzeColor){
-        case "red":
-            console.log("Thats my favortie color")
-        break;
-        case "blue":
-            console.log("this is a boring color")
-        break;
-        case "cyan":
-            console.log("looks like the sky")
-        break;
-        default:
-        console.log("not a color")
-        break;
-    }
+// const  analyzeColor = prompt("Whats your favorite color")
+//     switch(analyzeColor){
+//         case "red":
+//             console.log("Thats my favortie color")
+//         break;
+//         case "blue":
+//             console.log("this is a boring color")
+//         break;
+//         case "cyan":
+//             console.log("looks like the sky")
+//         break;
+//         default:
+//         console.log("not a color")
+//         break;
+//     }
 
 
 
@@ -127,8 +147,31 @@ const  analyzeColor = prompt("Whats your favorite color")
 //  */
 
 // const luckyNumber = Math.floor(Math.random() * 6);
-
-
+//
+// const calculateDiscount = (luckyNumber) => {
+//     if (luckyNumber === 0) {
+//         console.log("no discount")
+//         return 0;
+//     } else if (luckyNumber === 1) {
+//         console.log("10%")
+//         return 0.10;
+//     } else if (luckyNumber === 2) {
+//         console.log("25%")
+//         return 0.25;
+//     } else if (luckyNumber === 3) {
+//         console.log("35%")
+//         return 0.35;
+//     } else if (luckyNumber === 4) {
+//         console.log("50%")
+//         return 0.50;
+//     } else if (luckyNumber === 5) {
+//         console.log("100%")
+//         return 1.0;
+//     } else {
+//         return 'Invalid lucky number';
+//     }
+// };
+// console.log(calculateDiscount(luckyNumber))
 
 
 
@@ -158,3 +201,23 @@ const  analyzeColor = prompt("Whats your favorite color")
 //  * Can you refactor your code to use functions?
 //  * HINT: The way we prompt for a value could be improved
 //  */
+
+const plus100 = (random) => {
+    alert("would you like to enter a number?")
+    let answerNmr = prompt("what is your number")
+    let onlyNmr = parseFloat(answerNmr)
+    if (onlyNmr !== 2 % 1) {
+        let message = "your number is even"
+        return message;
+    } else {
+        let message = "your number is odd";
+        return message;
+    }
+
+}
+
+let myResult = plus100("answer");
+alert(myResult)
+console.log(myResult);
+
+
