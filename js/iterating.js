@@ -1,4 +1,4 @@
-(function(){
+
 
     // /**
     //  * TODO: Done
@@ -23,42 +23,58 @@
     //  * array.
     //  */
     const name = ["eddie", "skylor", "brandon", "aiden"]
-    // const nameNmr = name.length
-    // const namePosition = name[0]
-    // console.log(nameNmr)
-    // for (let i = 0; i < name.length; i++) {
-    //     const words = name[i];
-    //     console.log(words)
-    // }
-    // console.log(name[0], name[1], name[2], name[3])
-
+    const nameNmr = name.length
+    const namePosition = name[0]
+    console.log(nameNmr)
+    for (let i = 0; i < name.length; i++) {
+        const words = name[i];
+        console.log(words)
+    }
+    console.log(name[0], name[1], name[2], name[3])
+// console log down vs straight
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
-name.forEach((name, index) => {
-   for (i = 0; i < name.length ; i++)
-       let words = name[i]
-    if (words === 0) {
-        return name [0]
+name.forEach((names, i) => {
+   for (i = 0; i < name.length ; i++) {
+       console.log(name[0], name[1], name[2], name[3])
+      return name
 
-    }
-    console.log(name [0])
-})
+   }
 
-    /**
-     // * TODO:
-     // * Create the following three functions, each will accept an array and
-     // * return an an element from it
-     // * - first: returns the first item in the array
-     // * - second: returns the second item in the array
-     // * - last: returns the last item in the array
-     // *
-     // * Example:
-     // *  > first([1, 2, 3, 4, 5]) // returns 1
-     // *  > second([1, 2, 3, 4, 5]) // returns 2
-     // *  > last([1, 2, 3, 4, 5]) // return 5
-     // */
+ })
 
 
-})();
+    // /**
+    //  // * TODO:
+    //  // * Create the following three functions, each will accept an array and
+    //  // * return an an element from it
+    //  // * - first: returns the first item in the array
+    //  // * - second: returns the second item in the array
+    //  // * - last: returns the last item in the array
+    //  // *
+    //  // * Example:
+    //  // *  > first([1, 2, 3, 4, 5]) // returns 1
+    //  // *  > second([1, 2, 3, 4, 5]) // returns 2
+    //  // *  > last([1, 2, 3, 4, 5]) // return 5
+    //  // */
+const colors = ["blue", "yellow", "green"]
+const drinks = ["water", "soda", "juice"]
+const moods = ["happy", "sad", "angry"]
+
+
+const firstElement = (array) => {
+      let result = array[0]
+    return result
+}
+
+const secondElement = (array) => {
+    let result = array[1]
+    return result
+}
+
+const lastElement = (array) => {
+    let arrayLength = array.lemgth
+    let result = [arraylemth -1]
+}   return result
