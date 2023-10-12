@@ -184,3 +184,38 @@ const addOne = (userInput) => {
     }
 }
 console.log(addOne('plus one'))
+
+
+const saladDressings = [
+    "Ranch",
+    "Caesar",
+    "Italian",
+    "Balsamic Vinaigrette",
+    "Thousand Island",
+    "Blue Cheese",
+    "French",
+    "Honey Mustard",
+    "Greek",
+    "Poppy Seed",
+    "Sesame Ginger",
+    "Cilantro Lime",
+    "Lemon Vinaigrette",
+    "Apple Cider Vinaigrette",
+    "Raspberry Vinaigrette",
+    "Avocado",
+    "Pesto",
+    "Tahini",
+    "Roasted Garlic",
+    "Soy & Ginger",
+];
+
+const nmrOfSaladDressings = saladDressings.length;
+console.log(`We got ${nmrOfSaladDressings} dressings here!`);
+
+let longestDressing = "";
+saladDressings.forEach(function (dressing) {
+    if (dressing.length > longestDressing.length) {
+        longestDressing = dressing;
+    }
+});
+console.log(longestDressing);
