@@ -26,6 +26,6 @@ let planetsCombine = planetsArray.join("<br>")
  * string, and <li> tags around each planet.
  */
 let html =
-    "<ul><li>'Mercury',</li><li>'Venus',</li><li>'Earth',</li><li>'Mars',</li><li>'Jupiter',</li><li>'Saturn',</li><li>'Uranus',</li><li>'Neptune'</li></ul>"
+    "<ul><li>Mercury</li><li>Venus</li><li>Earth</li><li>Mars</li><li>Jupiter</li><li>Saturn</li><li>Uranus</li><li>Neptune</li></ul>"
 document.body.innerHTML += html
 })();
