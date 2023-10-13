@@ -7,6 +7,8 @@
     //  * with your first and last name. Store this object in a variable named
     //  * `person`.
 
+// the .this method is better to pull keys while mid defining so that when you console.log, you won't get an error. easy day!
+
         const person = {
             firstName: "Eddie",
             lastName: "Ayala",
@@ -56,6 +58,8 @@
 
     //  */
     shoppers.forEach((shopper, index) => {
+       // const {name, amount} = shopper. this would be easier then just using shopper.name or shopper.amount. at that point you can use the keys
+        // from the objects. easy day
         if (shopper.amount >= 200) {
            console.log("You get a 12% discount!")
        } else {
@@ -104,7 +108,8 @@
         },
         {title: 'Bleach', author: {
             firstName: 'Tite',
-            lastName: 'kubo'
+            lastName: '' +
+                'Kubo'
             }
 
         }
