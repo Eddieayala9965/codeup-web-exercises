@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+<h1>Register for website</h1>
+<form method="POST" action="https://request-inspector.glitch.me/">
+ <div>
+     <input type="hidden" name="userid" value="58649">
+    <label for="username">
+            <span>Usesrname</span>
+            <input id="username" name="username" type="text" placeholder="username" required>
+        </label>
+  </div>
+<!--    <input type="submit" value="login">-->
+   <div>
+        <label for="password">
+            <span>Password</span>
+        <input id="password" name="password" type="password" placeholder="password" required>
+        </label>
+   </div>
+    <div>
+
+    </div>
+<section>
+<h2>What kind of pizza do you like ?</h2>
+    <label>
+        <input type="checkbox" value="pepperoni" name="pizza_likes">
+        <span>Pepperoni</span>
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" value="cheese" name="pizza_likes">
+        <span>Cheese</span>
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" value="pineapple" name="pizza_likes">
+        <span>pineapple</span>
+    </label>
+</section>
+    <section>
+        <h2>What is your role?</h2>
+        <label>
+            <input type="radio" value="Designer" name="Dev">
+            <span>Designer</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" value="Developer" name="Dev">
+            <span>Developer</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" value="ProjectManager" name="Dev">
+            <span>Project Manager</span>
+        </label>
+        <br>
+    </section>
+    <section>
+        <label>
+            <span>Tell us about yourself</span>
+            <br>
+            <textarea name="bio"></textarea>
+        </label>
+        <br>
+        <h2>Fav Wing joint</h2>
+        <select name="wings">
+            <option value="dubs">BDUBS</option>
+            <option value="wingD">Wing Daddy</option>
+            <option value="ws">Wing Stop</option>
+            <option value="pluck">Pluckers</option>
+            <option value="ab">Anchor Bar</option>
+        </select>
+        <button>Login</button>
+    </section>
+</form>
+
+</body>
+</html>

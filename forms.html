@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+<form method="POST" action="https://request-inspector.glitch.me/">
+  <h2>Email Login</h2>
+   <div>
+    <label for="email">
+        <span>Email:</span>
+        <input id="email" name="email" type="text" placeholder="Email" required>
+    </label>
+   </div>
+   <div>
+     <label for="password">
+         <span>Password:</span>
+         <input type="password" id="password" name="password" placeholder="Password" required>
+     </label>
+   </div>
+    <div>
+        <h2>Bio</h2>
+       <label>
+        <span></span>
+           <textarea rows="25" style="width: 500px" name="bio"></textarea>
+       </label>
+    </div>
+    <div>
+        <h2>How did you hear about us?</h2>
+<!--        billboard", "radio advertisement", "internet advertisement", and "other".-->
+        <label>
+            <input type="radio" name="hear" value="board">
+            <span>
+            billboard
+             </span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="hear" value="radios">
+            <span>
+            radio advertisement
+             </span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="hear" value="internet">
+            <span>
+            internet advertisement
+             </span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="hear" value="other">
+            <span>
+            other
+             </span>
+        </label>
+    </div>
+    <div>
+        <h2>Favorite Web Browser</h2>
+        <select name="browser">
+            <option value="chrome">Google</option>
+            <option value="apple">Safari</option>
+            <option value="firefox">Firefox</option>
+            <option value="explorer">Internet Explorer</option>
+        </select>
+        <button>Go</button>
+    </div>
+</form>
+</body>
+</html>
