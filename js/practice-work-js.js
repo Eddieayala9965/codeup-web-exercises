@@ -198,13 +198,27 @@
 // Use the alert function to show a message that says 'Welcome to my Website!'.
 //
 //     Use a prompt to ask for the user's favorite color. Use the user's response to alert a message that says that the color entered is your favorite color too.
-
-// const favColor = (favRed, favBlue) => {
-//     prompt("Whats your favorite color?")
-//     if (favRed === "red") {
+// alert("Welcome to my website")
+// const color = () => {
+//     const favColor = prompt("Whats Your favorite color?")
+//     if (favColor === "red") {
+//         console.log("red is the color of the rose")
+//     } else if(favColor === "blue" ) {
+//         console.log("blue is the color of the sea")
+//     } else if (alert("no color recognized")) {
 //
-//     } else if ()
+//     }
 // }
+// let result = color()
+// console.log(result)
+
+const movieNight = () => {
+    const movieChoice = prompt("What movie would you like to rent today")
+    if (movieChoice === "littleMermaid" + 3) {
+    console
+    }
+}
+
 
 // const addTwo = (x) => {
 //     console.log(x+2)
@@ -231,3 +245,262 @@
 // }
 // let result = checkGuess();
 // console.log(result);
+
+
+
+// Absolutely! Here's another set of function ideas for you to work on:
+//
+// isBoolean:
+//     Define a function that checks if the input is a boolean value or not.
+// const isBoolean = (input) => {
+//     return typeof input === "boolean"
+// }
+
+//
+//     isEven:
+// Create a function that determines if the input is an even number.
+
+// const isEven = (input) => {
+//     return input === 4 % 2
+// }
+//
+
+//     isOdd:
+// Build a function that determines if the input is an odd number.
+
+// const isOdd = (input) => {
+//     return input === 2 % 1
+// }
+
+//     isMultipleOf:
+// Write a function that checks if the input is a multiple of a specified factor.
+
+// const isMultipleOf = () => {
+//     return input === 4 % 2
+// }
+
+//     isTruthy:
+// Define a function that determines if the input is a truthy value.
+
+// const isTruthy = (input) => {
+//     return input === true
+// }
+
+//     isFalsy:
+// Create a function that determines if the input is a falsy value.
+// const isFalsy = (input) => {
+//     return input === false
+// }
+
+//     isSpecialCharacter:
+// Build a function that checks if the input is a special character (not a letter or a number).
+
+// const isSpecialCharacter = (input) => {
+//     return input === "@"
+// }
+
+// isUpperCase:
+//     Define a function that determines if the input is in uppercase.
+// const isUpperCase = (input) => {
+//     return input === input.toUpperCase()
+// }
+
+//     isLowerCase:
+// Create a function that determines if the input is in lowercase.
+
+// const isLowerCase = (input) => {
+//     return input === input.toLowerCase()
+// }
+
+//     isPerfectSquare:
+// Write a function that checks if the input
+
+// const findLargestNumber = (arr) => {
+//     let largest = arr[0]
+// for (i = 0 ;i < arr.length ;i++) {
+// if (largest < arr) {
+//     return true
+// }
+// }
+//
+// }
+// const numbers = [42, 17, 8, 94, 23, 61, 12, 51, 6]
+// const result = findLargestNumber(numbers)
+// console.log(result)
+
+
+
+// Certainly! Loops are fundamental constructs in programming that allow you to execute a block of code repeatedly. Here are some common loop exercises in JavaScript to help you practice:
+//
+//     Print Numbers Using a for Loop:
+// Write a program that prints numbers from 1 to 10 using a for loop.
+//
+//                                                                  javascript
+//     Copy code
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+// }
+// Print Even Numbers Using a for Loop:
+// Write a program that prints even numbers from 1 to 20 using a for loop.
+//
+//                                                                       javascript
+//     Copy code
+// for (let i = 2; i <= 20; i += 2) {
+//     console.log(i);
+// }
+// Print Numbers in Reverse Using a while Loop:
+// Write a program that prints numbers from 10 to 1 in reverse order using a while loop.
+//
+//     javascript
+//     Copy code
+// let i = 10;
+// while (i >= 1) {
+//     console.log(i);
+//     i--;
+// }
+// Sum of Numbers Using a do-while Loop:
+// Write a program that calculates the sum of numbers from 1 to 10 using a do-while loop.
+//
+//     javascript
+// Copy code
+// let sum = 0;
+// let i = 1;
+//
+// do {
+//     sum += i;
+//     i++;
+// } while (i <= 10);
+//
+// console.log('Sum:', sum);
+// Looping Over an Array:
+//     Write a program that loops over an array and prints each element.
+//
+//     javascript
+// Copy code
+// const arr = [10, 20, 30, 40, 50];
+//
+// for (let i = 0; i < arr.length; i++) {
+//     console.log('Element at index', i, 'is', arr[i]);
+// }
+// Looping Over Object Properties:
+//     Write a program that loops over an object and prints each key-value pair.
+//
+//     javascript
+// Copy code
+// const person = {
+//     name: 'John',
+//     age: 30,
+//     city: 'New York'
+// };
+//
+// for (const key in person) {
+//     console.log(key + ':', person[key]);
+// }
+// Feel free to modify and experiment with these exercises to deepen your understanding of loops in JavaScript.
+
+// "use strict";
+//
+// /**
+//  * TODO:
+//  * Create a function called 'sayHello' that takes a parameter 'name'.
+//  * When called, the function should return a message that says hello to the passed in name.
+//  *
+//  * Example
+//  * > sayHello("codeup") // returns "Hello, codeup!"
+//  */
+
+const sayHello = (name) => {
+    return `hello ${name}`
+}
+console.log(sayHello("codeup"))
+
+// /**
+//  * TODO:
+//  * Call the function 'sayHello' and pass your name as a string literal argument.
+//  * Store the result of the function call in a variable named 'helloMessage'.
+//  *
+//  * console.log 'helloMessage' to check your work
+
+let helloMessage = sayHello("Eddie")
+console.log(helloMessage);
+
+
+//  * TODO:
+//  * Store your name as a string in a variable named 'myName', and pass that
+//  * variable to the 'sayHello' function. You should see the same output in the
+//  * console.
+//  */
+
+let myName = "Eddie";
+console.log(sayHello(myName));
+
+// // Don't modify the following line, it generates a random number between 1 and 3
+// // and stores it in a variable named random
+const random = Math.floor((Math.random() * 3) + 1);
+
+
+//  * TODO:
+//  * Create a function called 'isTwo' that takes a number as a parameter.
+//  * The function should return a boolean value based on whether or not the passed
+//  * number is the number 2.
+
+// const isTwo = (number) => {
+//     return number !== 2
+// }
+// console.log(isTwo())
+
+//  * Example
+//  * > isTwo(1) // returns false
+//  * > isTwo(2) // returns true
+//  * > isTwo(3) // returns false
+//  *
+//  * Call the function 'isTwo' passing the variable 'random' as a argument.
+//  *
+//  * console.log *outside of the function* to check your work (you should see a
+//  * different result everytime you refresh the page if you are using the random
+//  * number)
+//  */
+
+const isTwo = () => {
+    return random
+}
+console.log(isTwo());
+
+
+// /**
+//  * TODO:
+//  * Create a function named 'calculateTip' to calculate a tip on a bill at a
+//  * restaurant. The function should accept a tip percentage and the total of the
+//  * bill, and return the amount to tip
+//  *
+//  * Examples:
+//  * > calculateTip(0.20, 20) // returns 4
+//  * > calculateTip(0.25, 25.50) // returns 6.375
+//  * > calculateTip(0.15, 33.42) // returns 5.013
+//  */
+
+const calculateTip = (tip, totalBill) => {
+    let result;
+}
+
+// /**
+//  * TODO:
+//  * Use prompt and alert in combination with your calculateTip function to
+//  * prompt the user for the bill total and a percentage they would like to tip,
+//  * then display the dollar amount they should tip
+//  */
+//
+// /**
+//  * TODO:
+//  * Create a function named `applyDiscount`. This function should accept a price
+//  * (before a discount is applied), and a discount percentage (a number between 0
+//  * and 1). It should return the result of applying the discount to the original
+//  * price.
+//  *
+//  * Example:
+//  * > let originalPrice = 100;
+//  * > let discountPercent = .2; // 20%
+//  * > applyDiscount(originalPrice, discountPercent) // 80
+//  *
+//  * > applyDiscount(45.99, 0.12) // 40.4712
+//  */
