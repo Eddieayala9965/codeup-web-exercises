@@ -1,0 +1,20 @@
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMAzKXiiJJbqthEvNDQboFTtPPLisUpdUUN3csCdNO_k7jMB31");
+}
+a:link {
+    color:black;
+}
+/* visited link (:visited) */
+a:visited {
+    color:black;
+}
+/* mouse hover over link (:hover) */
+a:hover {
+    color:blue;
+}
+
+.fancy-header {
+    color: black;
+    font-size: x-large;
+    text-decoration: underline;
+}

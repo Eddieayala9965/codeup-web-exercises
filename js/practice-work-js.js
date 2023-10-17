@@ -479,9 +479,14 @@ console.log(isTwo());
 //  * > calculateTip(0.15, 33.42) // returns 5.013
 //  */
 
-const calculateTip = (tip, totalBill) => {
-    let result;
-}
+// const calculateTip = (tipPercentage, totalBill) => {
+//     tipPercentage = .12;
+//     totalBill = 150;
+//     let result = parseFloat(tipPercentage * totalBill);
+//     return result
+// }
+// let result = calculateTip()
+// console.log(result)
 
 // /**
 //  * TODO:
@@ -489,7 +494,23 @@ const calculateTip = (tip, totalBill) => {
 //  * prompt the user for the bill total and a percentage they would like to tip,
 //  * then display the dollar amount they should tip
 //  */
-//
+
+const calculateTip = (totalBill, tipPercentage) => {
+    totalBill = 100
+    tipPercentage = .12
+    totalBill.prompt("Your total bill is $100")
+
+    let result;
+
+
+
+
+
+
+
+    return;
+}
+
 // /**
 //  * TODO:
 //  * Create a function named `applyDiscount`. This function should accept a price

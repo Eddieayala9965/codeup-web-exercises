@@ -26,35 +26,36 @@
         <h2>Bio</h2>
        <label>
         <span></span>
-           <textarea rows="25" style="width: 500px" name="bio"></textarea>
+           <textarea rows="25" style="width: 500px" id="bio" placeholder="Tell us about yourself" name="bio"></textarea>
        </label>
     </div>
     <div>
         <h2>How did you hear about us?</h2>
 <!--        billboard", "radio advertisement", "internet advertisement", and "other".-->
-        <label>
-            <input type="radio" name="hear" value="board">
+        <label for="hear">
+            <input type="radio" id="hear"name="hear" value="board">
             <span>
             billboard
              </span>
         </label>
         <br>
-        <label>
-            <input type="radio" name="hear" value="radios">
+        <label for="hear">
+<!--            add id -->
+            <input type="radio" id="hear"name="hear" value="radios">
             <span>
             radio advertisement
              </span>
         </label>
         <br>
-        <label>
-            <input type="radio" name="hear" value="internet">
+        <label for="hear">
+            <input type="radio" id="hear" name="hear" value="internet">
             <span>
             internet advertisement
              </span>
         </label>
         <br>
-        <label>
-            <input type="radio" name="hear" value="other">
+        <label for="hear">
+            <input type="radio" id="hear" name="hear" value="other">
             <span>
             other
              </span>
@@ -62,7 +63,7 @@
     </div>
     <div>
         <h2>Favorite Web Browser</h2>
-        <select name="browser">
+        <select id="browser" name="browser">
             <option value="chrome">Google</option>
             <option value="apple">Safari</option>
             <option value="firefox">Firefox</option>
