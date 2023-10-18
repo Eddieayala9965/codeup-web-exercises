@@ -1,20 +1,90 @@
 body {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMAzKXiiJJbqthEvNDQboFTtPPLisUpdUUN3csCdNO_k7jMB31");
+    font-size: x-large;
+    font-family: "Mohave";
+    background-image: url("../img/shattered.webp");
 }
 a:link {
-    color:black;
+    color:inherit;
 }
 /* visited link (:visited) */
 a:visited {
-    color:black;
+    color:inherit;
 }
 /* mouse hover over link (:hover) */
 a:hover {
-    color:blue;
+    background-color: dimgrey;
+
 }
 
 .fancy-header {
     color: black;
     font-size: x-large;
     text-decoration: underline;
+    text-align: center;
+    font-weight: 600;
+}
+
+ol {
+    list-style-type: georgian;
+    margin-left: 600px;
+}
+ul {
+list-style-type: georgian;
+    margin-left: 600px
+}
+#move {
+    text-decoration: underline;
+    text-underline: black;
+    margin-left: 460px;
+}
+#company {
+    text-align: center;
+    text-underline: black;
+}
+
+img {
+
+    box-shadow: 18px 15px 29px -6px rgba(0,0,0,0.61);
+    border-radius: 25px;
+}
+
+ #image {
+margin-left: 387px;
+}
+
+ .make-it-better {
+     text-align: center;
+     text-decoration: underline;
+ }
+
+table {
+    margin-left: 500px;
+    margin-bottom: 200px;
+}
+th {
+    padding: 25px;
+    font-size: xx-large;
+    text-decoration: underline;
+    font-weight: 900;
+}
+td {
+    padding: 30px;
+    border-style: solid ;
+margin-left: 100px;
+}
+.fancy-header.hero {
+font-size: xxx-large;
+ }
+
+h3 {
+    margin-left: 1200px;
+}
+div em {
+    margin-left: 1000px;
+}
+
+h3 > a {
+    border-radius: 10px;
+    border-style: solid ;
+   text-decoration: unset;
 }

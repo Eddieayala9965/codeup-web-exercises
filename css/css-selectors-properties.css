@@ -1,0 +1,86 @@
+/*css variable has to be the very top*/
+/* this targets everything* */
+/*@import "<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Mohave:ital@1&display=swap" rel="stylesheet">";*/
+:root {
+    --clr-primary: #4e5d33;
+    --clr-secondary: #FFC10C;
+    --border-radius: 10px;
+    --clr--secondary-light: #ffd46c
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body {
+    font-family: "Roboto Light" sans-serif;
+}
+h1, h2, h3 /* etc....*/ {
+    font-family: "Lobster" sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: unset;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header.container{
+    justify-content: center;
+}
+header.row {
+    /*align-items: center;*/
+}
+.rows {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    background-color: transparent;
+}
+#page-header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+header img {
+    width: 150px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    font-weight: 600;
+}
+
+nav > ul > li{
+    padding: 10px 20px;
+
+}
+nav > ul > li > ul {
+list-style: none;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.container.hero {
+    min-height: 100dvh;
+    background-color: green;
+   background-position: center;
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/codeup-logo-svg.svg");
+}
+.btn {
+    background-color: var(--clr-secondary);
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    transition: background-color ease 0.3s;
+}
+.btn:hover {
+    opacity: 1;
+    transition: .5s ease;
+    background-color:var(--clr--secondary-light) ;
+}

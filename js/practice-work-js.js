@@ -409,10 +409,10 @@ const movieNight = () => {
 //  * > sayHello("codeup") // returns "Hello, codeup!"
 //  */
 
-const sayHello = (name) => {
-    return `hello ${name}`
-}
-console.log(sayHello("codeup"))
+// const sayHello = (name) => {
+//     return `hello ${name}`
+// }
+// console.log(sayHello("codeup"))
 
 // /**
 //  * TODO:
@@ -421,8 +421,8 @@ console.log(sayHello("codeup"))
 //  *
 //  * console.log 'helloMessage' to check your work
 
-let helloMessage = sayHello("Eddie")
-console.log(helloMessage);
+// let helloMessage = sayHello("Eddie")
+// console.log(helloMessage);
 
 
 //  * TODO:
@@ -431,12 +431,12 @@ console.log(helloMessage);
 //  * console.
 //  */
 
-let myName = "Eddie";
-console.log(sayHello(myName));
+// let myName = "Eddie";
+// console.log(sayHello(myName));
 
 // // Don't modify the following line, it generates a random number between 1 and 3
 // // and stores it in a variable named random
-const random = Math.floor((Math.random() * 3) + 1);
+// const random = Math.floor((Math.random() * 3) + 1);
 
 
 //  * TODO:
@@ -461,10 +461,10 @@ const random = Math.floor((Math.random() * 3) + 1);
 //  * number)
 //  */
 
-const isTwo = () => {
-    return random
-}
-console.log(isTwo());
+// const isTwo = () => {
+//     return random
+// }
+// console.log(isTwo());
 
 
 // /**
@@ -495,21 +495,22 @@ console.log(isTwo());
 //  * then display the dollar amount they should tip
 //  */
 
-const calculateTip = (totalBill, tipPercentage) => {
-    totalBill = 100
-    tipPercentage = .12
-    totalBill.prompt("Your total bill is $100")
-
-    let result;
-
-
-
-
-
-
-
-    return;
-}
+// const calculateTip = (totalBill, tipPercentage) => {
+//     totalBill = 100
+//     tipPercentage = 12
+//    let promptBill = parseFloat(prompt("Your total bill is $100, what would you like to tip?"))
+// if (promptBill === tipPercentage) {
+//     alert("ahhh ok $12")
+// } else if (promptBill === totalBill) {
+//     alert("OK.....not tip then...just the bill")
+//
+// } else {
+//     alert("say that one more time ?")
+// }
+//
+//
+// }
+// console.log(calculateTip())
 
 // /**
 //  * TODO:
@@ -517,7 +518,18 @@ const calculateTip = (totalBill, tipPercentage) => {
 //  * (before a discount is applied), and a discount percentage (a number between 0
 //  * and 1). It should return the result of applying the discount to the original
 //  * price.
-//  *
+
+// const applyDiscount = (discount, price) => {
+//     price = 100
+//     discount = .2
+//   let result = parseFloat(price * discount)
+//     let finalSum = result.toLocaleString("en-US", {style:"currency", currency:"USD"});
+//     let finalAlert = alert(`${finalSum} is your discount total`)
+//     return finalAlert;
+// }
+// console.log(applyDiscount())
+
+
 //  * Example:
 //  * > let originalPrice = 100;
 //  * > let discountPercent = .2; // 20%
@@ -525,3 +537,208 @@ const calculateTip = (totalBill, tipPercentage) => {
 //  *
 //  * > applyDiscount(45.99, 0.12) // 40.4712
 //  */
+
+// "use strict";
+//
+// /* ########################################################################## */
+//
+// /**
+//  * TODO:
+//  * Create a function named `analyzeColor` that accepts a string that is a color
+//  * name as input. This function should return a message which relates to the
+//  * color stated in the argument of the function. For colors you do not have
+//  * responses written for, return a string stating so
+//  *
+//  * Example:
+//  *  > analyzeColor('blue') // returns "blue is the color of the sky"
+//  *  > analyzeColor('red') // returns "Strawberries are red"
+
+
+// const analyzeColor = (colors) => {
+//     colors = 'red'
+//     if (colors === 'red') {
+//         console.log("red is the color of the roses")
+//     } else if (colors === 'blue'){
+//         console.log("blue is the color of the ocean")
+//     } else if (colors === 'cyan') {
+//         console.log("i dont know anything about cyan")
+//     }
+// }
+//  *  > analyzeColor('cyan') // returns "I don't know anything about cyan"
+//  *
+//  * You should use an if-else-if-else block to return different messages.
+//  *
+//  * Test your function by passing various string literals to it and
+//  * console.logging the function's return value
+//  */
+//
+// // Don't change the next two lines!
+// // These lines create two variables for you:
+// // - `colors`: a list of the colors of the rainbow
+// // - `randomColor`: contains a single random color value from the list (this
+// //                  will contain a different color every time the page loads)
+// const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// const randomColor = colors[Math.floor(Math.random() * colors.length)];
+// /**
+//  * TODO:
+//  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
+//  * You should see a different message every time you refresh the page
+// /**
+
+// const analyzeColor = (color) => {
+//     if (color === 'red') {
+//         return "red is the color of the roses"
+//     } else if (color !== 'blue'){
+//         return "blue is the color of the ocean"
+//     } else if (color !=='orange') {
+//         return "i dont know anything about orange"
+//     }
+// }
+//
+// console.log(analyzeColor(randomColor))
+
+
+
+
+//  * TODO:
+//  * Comment out the code above, and refactor your function to use a switch-case statement
+
+
+// let narutoCharacters = prompt("who is your favorite naruto charcter")
+//
+// switch(narutoCharacters) {
+//     case "Naruto":
+//         alert("Naruto wow! me too")
+//         break;
+//     case "Sasuke":
+//         alert("hes alright")
+//         break;
+//     case "Itatchi":
+//         alert("def the best")
+//     default:
+// }
+//
+// console.log(narutoCharacters)
+
+
+
+//  * TODO:
+//  * Prompt the user for a color when the page loads, and pass the input from the
+//  * user to your `analyzeColor` function. Alert the return value from your
+//  * function to show it to the user.
+
+
+// const analyzeColor = (color) => {
+//     let colorP = prompt("what is your favorite color")
+//     if (colorP === 'red') {
+//         return alert("red is the color of the roses")
+//     } else if (colorP === 'blue'){
+//         return alert("blue is the color of the ocean")
+//     } else if (colorP ==='orange') {
+//         return alert("i dont know anything about orange")
+//     }
+// }
+//
+// console.log(analyzeColor())
+
+
+//  * TODO:
+//  * Suppose there's a promotion in Walmart, each customer is given a randomly
+//  * generated "lucky number" between 0 and 5. If your lucky number is 0 you have
+//  * no discount, if your lucky number is 1 you'll get a 10% discount, if it's 2,
+//  * the discount is 25%, if it's 3, 35%, if it's 4, 50%, and if it's 5 you'll get
+//  * everything for free!.
+//  *
+//  * Write a function named `calculateTotal` which accepts a lucky number and total
+//  * amount, and returns the discounted price.
+//  *
+//  * Example:
+//  * calculateTotal(0, 100) // returns 100
+//  * calculateTotal(4, 100) // returns 50
+//  * calculateTotal(5, 100) // returns 0
+//  *
+//  * Test your function by passing it various values and checking for the expected
+//  * return value.
+
+const calculateTotal = (luckyNumber, totalAmount) => {
+   totalAmount = 100
+    if (luckyNumber === 1) {
+        return totalAmount * .10
+    } else if (luckyNumber === 2) {
+        return  totalAmount * .25
+    } else if (luckyNumber === 3) {
+        return totalAmount * .35
+    } else if (luckyNumber === 4) {
+        return totalAmount * .50
+    } else if (luckyNumber === 5){
+
+    }
+}
+console.log(calculateTotal("your lucky number", "total amount"))
+
+
+//  * TODO:
+//  * Uncomment the line below to generate a random number between 0 and 5.
+//  * (In this line of code, 0 is inclusive, and 6 is exclusive)
+//  * Prompt the user for their total bill, then use your `calculateTotal` function
+//  * and alerts to display to the user what their lucky number was, what their
+//  * price before the discount was, and what their price after the discount is.
+//  */
+// // Generate a random number between 0 and 6
+// // const luckyNumber = Math.floor(Math.random() * 6);
+//
+// /**
+//  * TODO:
+//  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
+//  * would like to enter a number. If they click 'Ok', prompt the user for a
+//  * number, then use 3 separate alerts to tell the user:
+//  *
+//  * - whether the number is even or odd
+//  * - what the number plus 100 is
+//  * - if the number is negative or positive
+//  *
+//  * Do *NOT* display any of the above information
+//  * if the user enters a value that is not of the number data type.
+//  * Instead, use an alert to inform them of the incorrect input data type.
+//  *
+//  *
+//  * Can you refactor your code to use functions?
+//  * HINT: The way we prompt for a value could be improved
+//  */
+
+
+// Function to calculate the average grade of the students
+const calculateAverageGrade = (studentList) => {
+    let classAverage;
+for (i = 0 ; i < studentList.length ; i++);
+
+
+    return classAverage;
+};
+
+// Function to find the student with the highest grade
+const findTopStudent = (studentList) => {
+    let topStudent;
+
+    // Your code here
+
+    return topStudent;
+};
+
+//IIFE / Main
+(() => {
+    // Array of student objects
+    const students = [
+        { id: 1, name: "Alice", grade: 90 },
+        { id: 2, name: "Bob", grade: 85 },
+        { id: 3, name: "Charlie", grade: 78 },
+        { id: 4, name: "David", grade: 92 },
+        { id: 5, name: "Eva", grade: 88 },
+    ];
+    // Display the average grade and the top student
+    const averageGrade = calculateAverageGrade(students);
+    const topStudent = findTopStudent(students);
+
+    console.log(`Average Grade: ${averageGrade}`);
+    console.log(`Top Student: ${topStudent.name} (Grade: ${topStudent.grade})`);
+})();
