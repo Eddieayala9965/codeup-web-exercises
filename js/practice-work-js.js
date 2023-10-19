@@ -717,28 +717,45 @@ for (i = 0 ; i < studentList.length ; i++);
 };
 
 // Function to find the student with the highest grade
-const findTopStudent = (studentList) => {
-    let topStudent;
+// const findTopStudent = (studentList) => {
+//     let topStudent;
+//
+//     // Your code here
+//
+//     return topStudent;
+// };
+//
+// //IIFE / Main
+// (() => {
+//     // Array of student objects
+//     const students = [
+//         { id: 1, name: "Alice", grade: 90 },
+//         { id: 2, name: "Bob", grade: 85 },
+//         { id: 3, name: "Charlie", grade: 78 },
+//         { id: 4, name: "David", grade: 92 },
+//         { id: 5, name: "Eva", grade: 88 },
+//     ];
+//     // Display the average grade and the top student
+//     const averageGrade = calculateAverageGrade(students);
+//     const topStudent = findTopStudent(students);
+//
+//     console.log(`Average Grade: ${averageGrade}`);
+//     console.log(`Top Student: ${topStudent.name} (Grade: ${topStudent.grade})`);
+Exercise 1: Print Numbers
+Write a program that prints numbers from 1 to 10 using a for loop.
 
-    // Your code here
+                                                                 Exercise 2: Sum of Numbers
+Write a program that calculates the sum of numbers from 1 to 10 using a for loop.
 
-    return topStudent;
-};
+                                                                                Exercise 3: Print Even Numbers
+Write a program that prints even numbers from 2 to 20 using a for loop.
 
-//IIFE / Main
-(() => {
-    // Array of student objects
-    const students = [
-        { id: 1, name: "Alice", grade: 90 },
-        { id: 2, name: "Bob", grade: 85 },
-        { id: 3, name: "Charlie", grade: 78 },
-        { id: 4, name: "David", grade: 92 },
-        { id: 5, name: "Eva", grade: 88 },
-    ];
-    // Display the average grade and the top student
-    const averageGrade = calculateAverageGrade(students);
-    const topStudent = findTopStudent(students);
+                                                                      Intermediate Level:
+    Exercise 1: Factorial
+Write a function that calculates the factorial of a given number using a for loop.
 
-    console.log(`Average Grade: ${averageGrade}`);
-    console.log(`Top Student: ${topStudent.name} (Grade: ${topStudent.grade})`);
-})();
+                                                                                 Exercise 2: Fibonacci Series
+Write a function that prints the Fibonacci series up to a specified number of terms using a for loop.
+
+                                                                                                    Exercise 3: Reverse a String
+Write a function that reverses a given string using a for loop.
