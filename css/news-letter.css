@@ -1,0 +1,82 @@
+.background-color {
+    background-color: #36384D;
+}
+.background-color-Two {
+    width: 875px;
+    height: 600px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+body {
+    font-family: "Roboto Light", sans-serif;
+}
+.flex-basis {
+flex-basis: 50px;
+}
+.flex-row {
+    flex-direction: row;
+}
+button {
+    position: absolute;
+    left: 35px;
+    bottom: 80px;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #232742;
+    color: white;
+}
+.para{
+    font-weight: bold;
+    font-size: 12px;
+    bottom: 210px;
+    left: 35px;
+}
+.para-two{
+    font-size: 16px;
+    top: 160px;
+    left: 35px;
+    width: 375px;
+
+}
+img{
+    width: 380px;
+    height: 575px;
+    left: 450px;
+    bottom: 14px;
+}
+label {
+    width: 350px;
+    height: 50px;
+    left: 35px;
+    bottom: 150px;
+
+}
+input {
+    font-size: 15px;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid #C6C6C6;
+}
+ul {
+    font-size: 16px;
+    width: 320px;
+    left: 35px;
+    bottom: 295px;
+}
+h1 {
+    font-size: 50px;
+    left: 35px;
+    top: 75px;
+    width: 375px;
+}
+.position-relative {
+    position: relative;
+}
+.position-absolute {
+position: absolute;
+}
+.flex-wrap-wrap{
+    flex-wrap: wrap;
+}

@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    min-height: 100vh;
+}
+.color{
+    background-color:lavender;
+}
+.container.color {
+    min-height: 50dvh;
+}
+.link-color {
+    color: #3DA08F;
+text-decoration: underline;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.border-radius {
+    border-radius: 20px;
+}
+.size-word {
+    font-size: 12px;
+}
+.word-bold {
+    font-weight: bold;
+}
+.colorTwo {
+    background-color: #575988;
+}
+@media screen and (max-width: 780px ) {
+    .container.hero.row {
+        flex-direction: column;
+    }
+}
