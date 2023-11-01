@@ -1,0 +1,20 @@
+/* Margin Auto */
+
+header {
+    padding: 2em;
+    background: #FFFFFF;
+    display: flex;
+}
+.nav__list {
+    margin:0 ;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.nav__list a {
+   color: #2f65f8;
+}
+.nav__list a:hover,
+.nav__list a:focus {
+    color: #3DA08F;
+}

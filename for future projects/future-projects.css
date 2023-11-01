@@ -1,0 +1,9 @@
+.col {
+    min-height: 100px;
+    border: 1px solid blue;
+}
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
