@@ -43,7 +43,12 @@
     //     clearTimeout(asPopup)
     // })
 
+
+
+
                                                 // Location object is a porperty not method
+
+
 
 //     console.log(window.location);
 //    const stop = setTimeout(()=>{

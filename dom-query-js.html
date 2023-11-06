@@ -27,25 +27,27 @@
 <script>
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
-        // const mainHeader = ;
-
+        const mainHeader = document.querySelector('#main-header') ;
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-
+        mainHeader.innerHTML = "Javascript is Cool"
         // TODO: Uncomment the next line and get the sub header element by id
-        // const subHeader = ;
-
+        const subHeader = document.querySelector('#sub-header') ;
         // TODO: Set the text color of subHeader to blue
-
+        subHeader.style.color = "blue"
         // TODO: Uncomment the next line and get all list items
-        // const listItems = ;
+        const listItems = document.querySelectorAll('li') ;
 
         // TODO: Set text color on every other list item to grey
+        for (let li of listItems) {
+            li.style.color = "grey"
+        }
+
         // TODO: Set text color of li with dbid = 1 to blue
-
+        listItems.item(0).style.color = "blue"
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        // const subParagraphs = ;
-
+        const subParagraphs = document.querySelector('.sub-paragraph') ;
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        subParagraphs.innerHTML = "Mission Accomplished"
 
 </script>
 </body>
