@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Defuse the BOM</title>
+</head>
+<body>
+
+<h2 id="message">This BOM will self destruct in <span id="timer">5</span> seconds...</h2>
+<button id="defuser">Defuse the BOM</button>
+
+<script>
+    const updateTimer = (detonationTimer) => {
+        if (detonationTimer === 0) {
+            alert('EXTERMINATE!');
+            document.body.innerHTML = '';
+        } else if (detonationTimer > 0) {
+            document.getElementById('timer').innerHTML = detonationTimer;
+        }
+
+        detonationTimer--;
+    };
+    function defuseTheBOM(id) {
+        clearInterval(id);
+    }
+
+    // IIFE
+    // Main Method
+    (()=>{
+        let detonationTimer = 5;
+
+        const updateInterval = setInterval(()=>{
+            updateTimer(detonationTimer--);
+        }, 1000);
+
+        let defuser = document.getElementById('defuser');
+        defuser.addEventListener('click', ()=>{
+            defuseTheBOM(updateInterval);
+        });
+    })();
+// let count = 10
+//     const stop = setInterval(()=>{
+//         console.log('hello');
+//         count--
+//         if (count === 0 ){
+//             clearInterval(stop)
+//         }
+//     }, 1000)
+
+</script>
+</body>
+</html>
