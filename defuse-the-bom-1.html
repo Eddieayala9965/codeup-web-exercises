@@ -12,6 +12,7 @@
 <script>
 
 
+
     // TODO: This function needs to be called once every second
     const updateTimer = (detonationTimer) => {
         if (detonationTimer === 0) {
@@ -23,16 +24,17 @@
 
         detonationTimer--;
     }
+
     function defuseTheBOM(id) {
         clearInterval(id)
     }
 
+
     (function() {
     // TODO: When this function runs, it needs to
     // cancel the interval/timeout for updateTimer()
-
-        let detonationTimer = 5;
-    const updatedInterval = setInterval(() => {
+    let detonationTimer = 5;
+    const updatedInterval = setInterval(()=> {
         updateTimer(detonationTimer--)
     }, 1000)
 
@@ -43,10 +45,10 @@
     // This causes the defuseTheBOM() function to be called
     // when the "defuser" button is clicked.
     // We will learn about events in the DOM lessons
-    let defuser = document.getElementById('defuser');
+    var defuser = document.getElementById('defuser');
     defuser.addEventListener('click', () => {
         defuseTheBOM(updatedInterval)
-        });
+    });
 })();
 </script>
 </body>
