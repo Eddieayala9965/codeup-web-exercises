@@ -38,16 +38,21 @@
         const listItems = document.querySelectorAll('li') ;
 
         // TODO: Set text color on every other list item to grey
-        for (let li of listItems) {
-            li.style.color = "grey"
-        }
 
+        listItems.forEach((listItem, index) => {
+            if (index % 2 !== 0) {
+                listItem.style.color = "grey"
+            }
+        })
         // TODO: Set text color of li with dbid = 1 to blue
         listItems.item(0).style.color = "blue"
+        document.querySelector('li[data-dbid="1"]').style.color = "blue"
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        const subParagraphs = document.querySelector('.sub-paragraph') ;
+        // const subParagraphs = document.querySelector('.sub-paragraph') ;
+        const subParagraphs = document.querySelectorAll('.sub-paragraph')
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs.innerHTML = "Mission Accomplished"
+       subParagraphs[0].innerText = "Mission Accomplished"
+        // subParagraphs.innerHTML = "Mission Accomplished"
 
 </script>
 </body>

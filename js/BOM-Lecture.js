@@ -10,22 +10,37 @@
 
 
 
-                                                            // setIntervalMethod
+                                                            // setInterval Method
 
 
 
 
-// let countdown = 11
-//     //this takes in two arguements, first annomyes function, second how often do you want execute the code
-//     const countdownTimer = setInterval(()=>{
-//         countdown--;
-//         console.log(countdown)
-//         if (countdown === 0) {
-//             clearInterval(countdownTimer)
-//             console.log("all Done")
-//         }
-//     }, 1000);
-// console.log("")
+let countdown = 20
+    //this takes in two arguements, first annomyes function, second how often do you want execute the code
+    const countdownTimer = setInterval(()=>{
+        countdown--;
+        console.log(countdown)
+        if (countdown === 0) {
+            clearInterval(countdownTimer)
+            console.log("all Done")
+        }
+    }, 1000);
+console.log("")
+
+
+ // let count = 20
+ // let max = 0
+ //
+ // const timer = setInterval(()=>{
+ //     count--
+ //     console.log(count)
+ //     if (count === 0) {
+ //         clearInterval(timer)
+ //         console.log("all done")
+ //     }
+
+
+
 
 
 

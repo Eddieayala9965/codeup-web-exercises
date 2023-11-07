@@ -16,4 +16,5 @@ const skills = document.querySelector('#skills');
         bod.style.backgroundColor = "blue"
     }
 
+
 })();
