@@ -6,16 +6,16 @@
 </head>
 <body>
 
-<h1 id="main-header">Hello World!</h1>
+<h1 id="main-header" class="bodyBtn">Hello World!</h1>
 <ul>
-    <li data-dbid="1">Item 1</li>
-    <li data-dbid="2">Item 2</li>
-    <li data-dbid="3">Item 3</li>
-    <li data-dbid="4">Item 4</li>
-    <li data-dbid="5">Item 5</li>
+    <li class="hover" data-dbid="1">Item 1</li>
+    <li class="hover" data-dbid="2">Item 2</li>
+    <li class="hover" data-dbid="3">Item 3</li>
+    <li class="hover" data-dbid="4">Item 4</li>
+    <li class="hover" data-dbid="5">Item 5</li>
 </ul>
 <h2 id="sub-header">Hello Again.</h2>
-<p class="sub-paragraph">
+<p class="sub-paragraph" id="text-btn">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -27,6 +27,7 @@
 <button class="changeHeader">Lets Change the word</button>
 <button class="change-sub-header">Lets Change the color</button>
 <button class="list-items">List Order color</button>
+<button class="go-blue">List item 1 turn blue</button>
 <button class="change-sub-paragraph">Change the whole paragraph</button>
 
 <script>
@@ -54,15 +55,15 @@
         // TODO: Set the text color of subHeader to blue
         // subHeader.style.color = "blue"
         // TODO: Uncomment the next line and get all list items
-        const listBtn = document.querySelector('.list-items')
-        const listItems = document.querySelectorAll('li');
-        listBtn.addEventListener("click", (e)=>{
-            listItems.forEach((listItem, index) => {
-                if (index % 2 !== 0) {
-                    listItem.style.color = "grey"
-                }
-            })
-        })
+        // const listBtn = document.querySelector('.list-items')
+        // const listItems = document.querySelectorAll('li');
+        // listBtn.addEventListener("click", (e)=>{
+        //     listItems.forEach((listItem, index) => {
+        //         if (index % 2 !== 0) {
+        //             listItem.style.color = "grey"
+        //         }
+        //     })
+        // })
 
         // TODO: Set text color on every other list item to grey
 
@@ -72,8 +73,11 @@
         //     }
         // })
         // TODO: Set text color of li with dbid = 1 to blue
+        const changeBlueBtn = document.querySelector('.go-blue')
+        changeBlueBtn.addEventListener("click", (event) => {
+            // listItems.item(0).style.color = "blue"
+        })
 
-        listItems.item(0).style.color = "blue"
         // document.querySelector('li[data-dbid="1"]').style.color = "blue"
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         const changeSubParaBtn = document.querySelector('.change-sub-paragraph')
@@ -85,6 +89,34 @@
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
        // subParagraphs[0].innerText = "Mission Accomplished"
         // subParagraphs.innerHTML = "Mission Accomplished"
+        const bodyBtn = document.querySelector(".bodyBtn")
+        const bodyBackGr = document.querySelector('#main-header')
+        bodyBtn.addEventListener('click', ()=> {
+            const bodyClr = bodyBackGr.style.backgroundColor = "red"
+            // bodyClr.classList.toggle('.bodyBtn') // works the same way. didnt really need this but works the same
+        })
+        const textBtn = document.querySelector('#text-btn') // changing the class was not the issue at all, just had to find the right property. remember you can console log to find the property
+        const paraTextSize = document.querySelector('.sub-paragraph')
+        textBtn.addEventListener('dblclick', (e)=>{
+            paraTextSize.style.fontSize = "18px"
+        })
+
+        const listItems = document.querySelectorAll('.hover')
+        for (let listItem of listItems) {
+           listItem.addEventListener('mouseenter', () =>{
+               listItem.style.color = "red"
+
+           })
+            listItem.addEventListener('mouseleave', () =>{
+                listItem.style.color = "black"
+
+            })
+
+
+        }
+
+
+
 
 
 
