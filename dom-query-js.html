@@ -24,35 +24,69 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+<button class="changeHeader">Lets Change the word</button>
+<button class="change-sub-header">Lets Change the color</button>
+<button class="list-items">List Order color</button>
+<button class="change-sub-paragraph">Change the whole paragraph</button>
+
 <script>
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
-        const mainHeader = document.querySelector('#main-header') ;
+        const mainHeader = document.querySelector("#main-header");
+        const changeHeaderBtn = document.querySelector(".changeHeader");
+
+        changeHeaderBtn.addEventListener("click", (event) => {
+                // const name = event.target.getAttribute("data-bs-target");
+                // console.log(name)
+            mainHeader.innerHTML = 'Javascript is Cool';
+            });
+
+        // const mainHeader = document.querySelector('.main-header') ;
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "Javascript is Cool"
+        // mainHeader.innerHTML = "Javascript is Cool"
         // TODO: Uncomment the next line and get the sub header element by id
         const subHeader = document.querySelector('#sub-header') ;
+        const changeSubHeadBtn = document.querySelector('.change-sub-header')
+
+        changeSubHeadBtn.addEventListener("click", (event) => {
+            subHeader.style.color = "blue"
+        })
         // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = "blue"
+        // subHeader.style.color = "blue"
         // TODO: Uncomment the next line and get all list items
-        const listItems = document.querySelectorAll('li') ;
+        const listBtn = document.querySelector('.list-items')
+        const listItems = document.querySelectorAll('li');
+        listBtn.addEventListener("click", (e)=>{
+            listItems.forEach((listItem, index) => {
+                if (index % 2 !== 0) {
+                    listItem.style.color = "grey"
+                }
+            })
+        })
 
         // TODO: Set text color on every other list item to grey
 
-        listItems.forEach((listItem, index) => {
-            if (index % 2 !== 0) {
-                listItem.style.color = "grey"
-            }
-        })
+        // listItems.forEach((listItem, index) => {
+        //     if (index % 2 !== 0) {
+        //         listItem.style.color = "grey"
+        //     }
+        // })
         // TODO: Set text color of li with dbid = 1 to blue
+
         listItems.item(0).style.color = "blue"
-        document.querySelector('li[data-dbid="1"]').style.color = "blue"
+        // document.querySelector('li[data-dbid="1"]').style.color = "blue"
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        // const subParagraphs = document.querySelector('.sub-paragraph') ;
+        const changeSubParaBtn = document.querySelector('.change-sub-paragraph')
         const subParagraphs = document.querySelectorAll('.sub-paragraph')
+
+        changeSubParaBtn.addEventListener("click", (event) => {
+            subParagraphs[0].innerText = "Mission Accomplished"
+        })
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-       subParagraphs[0].innerText = "Mission Accomplished"
+       // subParagraphs[0].innerText = "Mission Accomplished"
         // subParagraphs.innerHTML = "Mission Accomplished"
+
+
 
 </script>
 </body>

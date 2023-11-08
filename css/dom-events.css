@@ -1,0 +1,39 @@
+.dropdown-parent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 6px;
+    position: absolute;
+    top: 100%;
+    width: 175px;
+    transition: all ease 0.3s;
+    opacity: 0;
+    pointer-events: none;
+}
+.menu-item {
+    display: flex;
+    padding: 10px 20px;
+}
+.dropdown-parent.open .dropdown-menu{
+    opacity: 1;
+    pointer-events: all;
+
+}
+.dropdown-parent.open .dropdown-toggle img {
+    transform: rotate(180deg);
+}

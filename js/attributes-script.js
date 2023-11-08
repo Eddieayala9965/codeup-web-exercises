@@ -48,6 +48,12 @@ setInterval(()=>{
 
 }, 2000)
 
+// const btnToggle = document.querySelector('#toggle-btn')
+// const changeClr = document.querySelector('#profile-card')
+// btnToggle.addEventListener("click", () => {
+//     changeClr.classList.toggle("background");
+// });
+
 
 
 

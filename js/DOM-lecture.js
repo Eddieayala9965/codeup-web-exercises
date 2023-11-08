@@ -18,3 +18,4 @@ const skills = document.querySelector('#skills');
 
 
 })();
+
