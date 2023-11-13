@@ -8,33 +8,45 @@
 //
 // })}
 
-const lastLists = document.querySelectorAll("ul");
-const listBtn = document.querySelector(".list-btn");
-listBtn.addEventListener("click", (e) => {
+
+
+const handleHighlight = (e) => {
     for (let lastList of lastLists) {
         const last = lastList.lastElementChild
         last.classList.toggle("make-yellow");
     }
+}
+ const handleBold = (e) => {
+     const last = h3.nextElementSibling;
+     last.e.target.classList.toggle("make-bold");
+ }
 
-})
+ const handleBlue = (e) => {
+        const last = list.parentElement.firstElementChild;
+        last.e.target.classList.toggle("make-blue");
+ }
+
+(()=>{
+
+
+const lastLists = document.querySelectorAll("ul");
+const listBtn = document.querySelector(".list-btn");
+listBtn.addEventListener("click", handleHighlight);
+
+
 
 const h3s = document.querySelectorAll("h3");
-
         for (let h3 of h3s) {
-        h3.addEventListener("click", (e) => {
-            const last = h3.nextElementSibling;
-            last.classList.toggle("make-bold");
-        })
+        h3.addEventListener("click", handleBold);
     }
 
 const lists = document.querySelectorAll("li");
-
-for (let list of lists) {
-    list.addEventListener("click", (e) => {
-        const last = list.parentElement.firstElementChild;
-        last.classList.toggle("make-blue");
-    })
+        for (let list of lists) {
+        list.addEventListener("click",handleBlue )
 }
+
+
+})();
 
 
 
