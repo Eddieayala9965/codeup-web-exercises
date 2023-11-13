@@ -1,7 +1,18 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"); frame
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 
 .page-wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+body{
+    font-family: "Noto Serif JP", serif;
 }
