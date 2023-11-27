@@ -59,11 +59,11 @@ const averageYears = totalYears / users.length
 console.log("Average =>",averageYears)
 console.log("Total =>", totalYears)
 
-const longestEmail = users.reduce((longest, user ) => {
-    if (user.email.length > longest.length) {
-        longest = user.email;
+const longestEmail = users.reduce((acc, user ) => {
+    if (user.email.length > acc.length) {
+        acc = user.email;
     }
-    return longest;
+    return acc;
 }, "")
 console.log(longestEmail)
 
