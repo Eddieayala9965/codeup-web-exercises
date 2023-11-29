@@ -1,23 +1,18 @@
-import {keys} from './keys.js';
-
-const getCountryData = async (searchText) =>{
-
-    searchText = encodeURIComponent(searchText);
-    const url =`https://api.mapbox.com/geocoding/v5/mapbox.places/${searchText}.json?access_token=${keys.mapbox}`;
-    const options = {
-        method: 'GET',
-        headers: {
-            "Content-Type": `application/json`,
-        }
-
-    }
-
-    const response = await fetch(url, options);
-    const data = await response.json();
-    return data.features[0].center;
+import {getCountryData} from "../api/mapbox";
+  const createMap = (coordinates) => {
+    mapboxgl.accessToken = keys.mapbox;
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+// Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: coordinates, // starting position [lng, lat]
+        zoom: 10// starting zoom
+    });
+    map.flyTo({
+        center: coordinates,
+        zoom: 10,
+    });
 }
-
-
 const foodPlaces = [
     {
         name: "Mix and Mac",
@@ -42,18 +37,7 @@ const foodPlaces = [
     const coordinates = await getCountryData("48 Sandburg Ct, Middletown, NY 10940");
    const city = await getCountryData()
     console.log(city);
-    mapboxgl.accessToken = keys.mapbox;
-    const map = new mapboxgl.Map({
-        container: 'map', // container ID
-// Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-        style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: coordinates, // starting position [lng, lat]
-        zoom: 10// starting zoom
-    });
-map.flyTo({
-        center: coordinates,
-        zoom: 10,
-})
+createMap(coordinates);
 
 
     for (let foodPlace of foodPlaces) {

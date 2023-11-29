@@ -1,0 +1,36 @@
+
+
+{
+  "dt": 1701187200,
+  "sunrise": 1701172883,
+  "sunset": 1701207030,
+  "moonrise": 1701209760,
+  "clouds": 54,
+  "dew_point": 19.51,
+  "feels_like": {
+    "day": 22.06,
+    "night": 15.26,
+    "eve": 19.26,
+    "morn": 19.4
+  },
+  "humidity": 55,
+  "moon_phase": 0.55,
+  "moonset": 1701178440,
+  "pop": 0.11,
+  "pressure": 1012,
+  "summary": "Expect a day of partly cloudy with clear spells",
+  "temp": {
+    "day": 32.27,
+    "min": 26.31,
+    "max": 32.61,
+    "night": 26.31,
+    "eve": 30.07
+  },
+  "uvi": 1.36,
+  "weather": [{}],
+  "wind_deg": 286,
+  "wind_gust": 32.41,
+  "wind_speed": 16.26
+}
+
+
